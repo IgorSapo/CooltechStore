@@ -1,0 +1,315 @@
+.sidebar {
+	width: 332px;
+	min-height: 100px;
+	float: left;
+}
+
+.pricerange-toggle {
+	border-radius: 5px;
+	border: 1px solid #dee1e4;
+	overflow: hidden;
+	margin: 0 0 38px 0;
+	padding: 0;
+
+	.pricerange-item {
+
+		.pricerange-link {
+			display:block;
+			background-color:#fbfbfb;
+			padding:12px 28px;
+			font-size:16px;
+			color: #7f7f7f;
+			font-size: 14px;
+			font-weight: 400;
+			height: 45px;
+			text-decoration: none;
+
+			&:hover {
+				background-color: #E9F0F3;
+			}
+
+			&_active {
+				background-color: #d9e5ea;
+			}
+		}
+	}
+}
+
+
+
+/* .radio-toolbar */ input[type="radio"] {
+    display:none;
+}
+
+/* .radio-toolbar */ input[type="checkbox"] {
+    display:none;
+}
+
+.radio-toolbar input[type="radio"]:checked + label { 
+    background-color:#fbfbfb;
+}
+
+.accordion {
+	border-radius: 5px;
+	border: 1px solid #dee1e4;
+	overflow: hidden;
+	background-color:#fbfbfb;
+	position: relative;
+	margin: 0;
+	padding: 0;
+}
+
+.accordion-toggle {
+	display: block;
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+
+input[type="radio"].accordion-item-input:checked ~ .accordion-section-header {
+		margin-bottom: 0;
+	}
+
+/* input[type="radio"].accordion-item-input:checked ~  */
+.accordion-section-content {
+		max-height: 0;
+		overflow: hidden;
+		// opacity: 0;
+		/* display: none; */
+	}
+
+.accordion-section {
+	border-bottom: 1px solid #dee1e4;
+	// padding:10px 28px 18px 28px;
+	color:  #333333;
+	position: relative;
+	width: 100%;
+
+	&:last-child {
+		border-bottom: none;
+	}
+	
+	// .accordion-toggle-arrow {
+	// 	position: absolute;
+	// 	right: 10px;
+	// 	top: 10px;
+	// 	width: 18px;
+	// 	height: 11px;
+	// 	background: url("/img/accordion-toggle-arrow.png");
+	// }
+
+	.accordion-section-header {
+		font-size: 16px;
+		font-weight: 600;
+		display: block;
+		width: 100%;
+		height: 45px;
+		padding: 9px 0 9px 28px;
+		cursor: pointer;
+
+		// margin: 0 0 15px 0;
+		margin: 0;
+		-webkit-transition: margin-bottom 0.4s ease-in, opacity 0.2s ease-in;
+		-moz-transition: margin-bottom 0.4s ease-in, opacity 0.2s ease-in;
+		-o-transition: margin-bottom 0.4s ease-in, opacity 0.2s ease-in;
+		-ms-transition: margin-bottom 0.4s ease-in, opacity 0.2s ease-in;
+		transition: margin-bottom 0.4s ease-in, opacity 0.2s ease-in;
+
+		&:before {
+			content: "";
+			position: absolute;
+			right: 10px;
+			top: 18px;
+			width: 18px;
+			height: 11px;
+			@include sprite($accordion-toggle-arrow);
+			-webkit-transition: -webkit-transform .3s ease;
+			transition: transform .3s ease;
+			-ms-transform: rotate(-180deg);
+			-webkit-transform: rotate(-180deg);
+			transform: rotate(-180deg);
+		}
+	}
+
+	input[type="radio"].accordion-item-input:checked ~ .accordion-section-content {
+		max-height: 1000px;
+		margin: 2px 30px 18px 29px;
+		-webkit-transition: max-height 0.4s linear;
+		-moz-transition: max-height 0.4s linear;
+		-o-transition: max-height 0.4s linear;
+		-ms-transition: max-height 0.4s linear;
+		transition: max-height 0.4s linear;
+	}
+
+	input[type="checkbox"].accordion-item-input:checked ~ .accordion-section-header:before {
+		transform: rotate(0);
+	}
+
+		.checkbox_label, .radio_label {
+			display:block;
+			font-size: 14px;
+			font-weight: 400;
+			margin-bottom: 17px;
+
+			&:before {
+				content:"";
+				display: inline-block;
+				vertical-align: bottom;
+				width: 19px;
+				height: 19px;
+				margin-right: 10px;
+			}
+		}
+
+		.radio_label {
+			&:before {
+				@include sprite($radio-empty);
+			}
+
+			&:hover:before {
+				@include sprite($radio-hover);
+			}
+		}
+
+		.checkbox_label {
+			&:before {
+				@include sprite($checkbox-empty);
+			}
+
+			&:hover:before {
+				@include sprite($checkbox-hover);
+			}
+		}
+
+			// &:last-child {
+			// 	margin-bottom: 1px;
+			// }
+		
+
+		input[type="radio"]:checked + label.radio_label:before {
+			@include sprite($radio-checked);
+		}
+
+		input[type="checkbox"]:checked + label.checkbox_label:before {
+			@include sprite($checkbox-checked);
+		}
+
+		.reset_checkboxes {
+			display: block;
+			margin-top: -4px;
+			color: #5db2fc;
+			font-size: 14px;
+			font-weight: 400;
+			text-decoration: underline;
+			cursor: pointer;
+		}
+
+		.device-color-list2 {
+			display: block;
+			margin: 2px 0 0 2px;
+			padding: 0;
+		}
+
+		.device-color-picker {
+			display: inline-block;
+			width: 37px;
+			height: 37px;
+			vertical-align: top;
+			margin: 0 18px 22px 0;
+			border: 1px solid #dee1e4;
+			&:nth-last-child(-n+4) {
+				margin-bottom: 2px;
+			}
+		}
+
+		.device-color-list2 {
+			margin: 2px 0 0 2px;
+
+			.colorp {
+				display: inline-block;
+				width: 37px;
+				height: 37px;
+				vertical-align: top;
+				margin: 0 18px 22px 0;
+				border: 1px solid #dee1e4;
+				&:nth-last-child(-n+8) {
+					margin-bottom: 2px;
+				}
+			}
+
+			input[type="checkbox"]:checked + label {
+				outline: 2px solid orange;
+			}
+		}
+			// label {
+			// 	display: inline-block;
+			// 	width: 37px;
+			// 	height: 37px;
+			// 	vertical-align: top;
+			// 	margin: 0 18px 22px 0;
+			// 	border: 1px solid #dee1e4;
+
+			// }
+
+			// input[type="radio"]:checked ~ label {
+			// 	outline: 2px solid blue;
+			// }
+		
+
+		.pricerange-container {
+			margin: 0 0 18px 0;
+			color: #333333;
+			font-size: 14px;
+			font-weight: 400;
+		}
+
+		.pricerange-from {
+			float: left;
+		}
+
+		.pricerange-to {
+			float: right;
+		}
+
+		#minprice,#maxprice {
+			width: 100px;
+			display: inline-block;
+			margin: 1px 0 0 5px;
+			font-weight: 600;
+		}
+
+		.ui-slider {
+			position: relative;
+			display: block;
+			border: none;
+			height: 3px;
+			background: grey;
+			margin-bottom: 13px;
+
+			.ui-slider-handle/* .ui-state-default */ {
+				position: absolute;
+				display: block;
+				width: 8px;
+				height: 14px;
+				border: none;
+				margin-left: -4px;
+				@include sprite($slider-handle);
+			}
+
+			.ui-slider-range/* .ui-widget-header */ {
+				display: block;
+				height: 3px;
+				background: orange;
+				position: absolute;
+			}
+		}
+}
+
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+

@@ -1,0 +1,14 @@
+.filter.clearfix
+	form.sort-method-select
+		label(for="sort-method-dropdown" class="sort-method-label") Сортировать по
+		select(name="sort-method" id="sort-method-dropdown")
+			option(value="price" selected) по цене
+			option(value="popularity") по популярности
+	form.view-switch
+		h3.view-switch-header Вид каталога
+		input(data-view="detailed_list" type='radio', id="detailed-list", name='catalogue-view', value="detailed-list" class="view-switch-radio" checked)
+		label(for="detailed-list" class="list-selector list-selector-detailed" data-view="detailed_list")
+		input(data-view="tile" type='radio', id="tile", name='catalogue-view', value="tile" class="view-switch-radio")
+		label(for="tile" class="list-selector list-selector-tile" data-view="tile")
+		input(data-view="simple_list" type='radio', id="simple-list", name='catalogue-view', value="simple-list" class="view-switch-radio")
+		label(for="simple-list" class="list-selector list-selector-simple" data-view="simple_list")

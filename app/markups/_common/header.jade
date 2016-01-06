@@ -1,0 +1,14 @@
+.header
+	.container.clearfix
+		.container-left
+			ul.social-list
+				- var socials = ['facebook', 'vk', 'twitter']
+				each item in socials
+					li.item
+						a(href="" class="social-list-link social-list-link_#{item}") #{item}
+		.container-right
+			ul.contacts-list
+				li.address
+					a(href="" class="address-link") ул. Маяковская 6, офис 17
+				li.phone
+					a(href="tel:+79211231213" class="phone-link") +7 (921) 123-12-13

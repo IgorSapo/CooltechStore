@@ -1,0 +1,54 @@
+@font-face {
+  font-family: "PTRoubleDecorative";
+  src: url("../fonts/PTRoubleDecorative/PTRoubleDecorative.eot");
+  src: url("../fonts/PTRoubleDecorative/PTRoubleDecorative.eot?#iefix") format("embedded-opentype"), url("../fonts/PTRoubleDecorative/PTRoubleDecorative.woff") format("woff"), url("../fonts/PTRoubleDecorative/PTRoubleDecorative.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+
+@import "compass";
+
+$green : #349234;
+
+@import "_common/mixins";
+
+/* --------- sprite --------- */
+
+@import "_common/icon-sprite.scss";
+
+/* --------- adjustment --------- */
+
+@import "_layout/normalize";
+@import "_layout/adjustment";
+
+/* --------- responsive --------- */
+
+@import "_layout/media";
+
+/* --------- sections --------- */
+
+@import "_sections/**/*";
+
+.main {
+	width: 100%;
+	background-color: #f4f4f4;
+}
+
+.main-container {
+	width: 1100px;
+	height: 100%;
+	margin: 0 auto 26px auto;
+	display: block;
+}
+
+.content {
+	width: 743px;
+	min-height: 200px;
+	float: right;
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}

@@ -1,0 +1,136 @@
+.filter {
+	height: 53px;
+	width: 743px;
+	margin-bottom: 30px;
+	border: 1px solid #dee1e4;
+	border-radius: 5px;
+	background-color: #e3ebee;
+	padding-left: 21px;
+	font-size: 0;
+}
+
+.sort-method-select {
+	display: inline-block;
+	float: left;
+	vertical-align: middle;
+	height: 51px;
+	font-size: 0px;
+	&:before {
+		content: "";
+		height: 100%;
+		display: inline-block;
+		vertical-align: middle;
+	}
+	.sort-method-label {
+		display: inline-block;
+		vertical-align: middle;
+		// line-height: 51px;
+		vertical-align: middle;
+		color: #5d656c;
+		font-size: 14px;
+		font-weight: 400;
+		margin-right: 10px;
+	}
+	.sort-method-dropdown {
+		display: inline-block;
+		vertical-align: middle;
+		border-radius: 3px;
+		border: 1px solid #ebedef;
+		background-color: #ffffff;
+		width: 143px;
+		height: 28px;
+		color:#7f7f7f;
+		font-size: 14px;
+		font-weight: 300;
+	}
+}
+
+.view-switch {
+	display: inline-block;
+	float: right;
+	margin: 0;
+	padding: 0;
+	height: 51px;
+
+	.view-switch-header {
+		display: inline-block;
+		color:#5d656c;
+		font-size: 14px;
+		font-weight: 400;
+		margin: 0 15px 0 0;
+		padding: 0;
+		vertical-align: top;
+		line-height: 51px;
+	}
+
+	.list-selector {
+		display: inline-block;
+		position: relative;
+		width: 52px;
+		height: 100%;
+		border-left: 1px solid lightgrey;
+		cursor: pointer;
+
+		&:before {
+			content: "";
+			display: block;
+			width: 16px;
+			height: 16px;
+			position: absolute;
+			left: 18px;
+			top: 19px;
+		}
+
+		&-detailed:before {
+			@include sprite($detailed-list-view);
+		}
+		&-tile:before {
+			@include sprite($tile-view);
+		}
+		&-simple:before {
+			@include sprite($simple-list-view);
+		}
+	}
+}
+
+input[type="radio"]:checked + label.list-selector-detailed:before {
+	@include sprite($detailed-list-view-checked);
+}
+
+input[type="radio"]:checked + label.list-selector-tile:before {
+	@include sprite($tile-view-checked);
+}
+
+input[type="radio"]:checked + label.list-selector-simple:before {
+	@include sprite($simple-list-view-checked);
+}
+
+.jq-selectbox/* .jqselect */ {
+	width: 143px;
+	height: 28px;
+}
+
+.jq-selectbox__select {
+	height: 100%;
+	font-family: "Open Sans", Arial, Helvetica, sans serif;
+	color: #7f7f7f;
+	font-size: 14px;
+	font-weight: 300;
+	line-height: 28px;
+	vertical-align: middle;
+}
+
+.jq-selectbox__dropdown {
+	font-family: "Open Sans", Arial, Helvetica, sans serif;
+	color: #7f7f7f;
+	font-size: 14px;
+	font-weight: 300;
+}
+
+.jq-selectbox__trigger-arrow {
+	width: 13px;
+	height: 9px;
+	@include sprite($select-arrow-collapsed);
+	top: 8px;
+	left: 17px;
+}

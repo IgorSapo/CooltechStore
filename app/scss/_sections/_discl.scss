@@ -1,0 +1,33 @@
+.disclaimer-container {
+	display: block;
+	width: 1100px;
+	margin: 0 auto;
+	padding-bottom: 8px;
+}
+
+.disclaimer-header {
+	color: #333333;
+	font-size: 20px;
+	font-weight: 700;
+	margin: 0 0 18px -1px;
+}
+
+.disclaimer-text {
+	color: #333333;
+	font-size: 14px;
+	font-weight: 400;
+	// width: 1100px;
+	// margin: 0 auto;
+
+	p {
+		margin: 0 0 20px 0;
+	}
+
+	.first {
+		padding-right: 20px;
+	}
+
+	.last {
+		padding-left: 20px;
+	}
+}

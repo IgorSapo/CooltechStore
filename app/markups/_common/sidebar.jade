@@ -1,0 +1,139 @@
+.sidebar
+	ul.pricerange-toggle
+		li.pricerange-item
+			a(href="" class="pricerange-link") Флагманы
+		li.pricerange-item
+			a(href="" class="pricerange-link pricerange-link_active") Бюджетная линейка
+	ul.accordion.vertical
+		li.accordion-section.availability
+			input(class="accordion-item-input" type="radio" name="accordion" id="item1" checked) 
+			label(for="item1" class="accordion-section-header") Наличие в магазинах
+			//- h3.accordion-section-header Наличие в магазинах
+			.accordion-section-content
+				input(type='radio', id="allstores", name='stores', value="allstores", checked)
+				label(for="allstores", class="radio_label") Во всех магазинах
+				input(type='radio', id="closeststores", name='stores', value="closeststores")
+				label(for="closeststores", class="radio_label") В ближайшем ко мне магазине
+		li.accordion-section.brand
+			input(class="accordion-item-input" type="radio" name="accordion" id="item2")
+			label(for="item2" class="accordion-section-header") Бренды
+			//- h3.accordion-section-header Бренды
+			.accordion-section-content
+				input(type='checkbox', id="Lenovo", name='brand', value="Lenovo", checked)
+				label(for="Lenovo", class="checkbox_label") Lenovo
+				input(type='checkbox', id="Apple", name='brand', value="Apple")
+				label(for="Apple", class="checkbox_label") Apple
+				input(type='checkbox', id="Samsung", name='brand', value="Samsung", checked)
+				label(for="Samsung", class="checkbox_label") Samsung
+				input(type='checkbox', id="Asus", name='brand', value="Asus")
+				label(for="Asus", class="checkbox_label") Asus
+				input(type='checkbox', id="Motorola", name='brand', value="Motorola", checked)
+				label(for="Motorola", class="checkbox_label") Motorola
+				.reset_checkboxes Сбросить фильтр
+		li.accordion-section.price
+			input(class="accordion-item-input" type="radio" name="accordion" id="item3")
+			label(for="item3" class="accordion-section-header") Цена
+			//- h3.accordion-section-header Цена
+			.accordion-section-content
+				.pricerange-container.clearfix
+					.pricerange-from
+						| от
+						input(type="text", id="minprice")
+					.pricerange-to
+						| до
+						input(type="text", id="maxprice")
+				//- label(for="amount") Price range:
+				//- input(type="text", id="amount", readonly style="border:0; color:#f6931f; font-weight:bold;")
+				div#slider-range
+		//- section.accordion-section.color
+		//- 	h3.accordion-section-header Цвет
+		//- 	.accordion-section-content
+		//- 		ul.device-color-list
+		//- 			li.device-color-picker
+		//- 				input(type='radio', id="color1", name='device-color', value="color1")
+		//- 				label(for="color1")
+		//- 			li.device-color-picker
+		//- 				input(type='radio', id="color2", name='device-color', value="color2")
+		//- 				label(for="color2")
+		//- 			li.device-color-picker
+		//- 				input(type='radio', id="color3", name='device-color', value="color3")
+		//- 				label(for="color3")
+		//- 			li.device-color-picker
+		//- 				input(type='radio', id="color4", name='device-color', value="color4")
+		//- 				label(for="color4")
+		//- 			li.device-color-picker
+		//- 				input(type='radio', id="color5", name='device-color', value="color5")
+		//- 				label(for="color5")
+		//- 			li.device-color-picker
+		//- 				input(type='radio', id="color6", name='device-color', value="color6")
+		//- 				label(for="color6")
+		//- 			li.device-color-picker
+		//- 				input(type='radio', id="color7", name='device-color', value="color7")
+		//- 				label(for="color7")
+		//- 			li.device-color-picker
+		//- 				input(type='radio', id="color8", name='device-color', value="color8")
+		//- 				label(for="color8")
+		//- 			li.device-color-picker
+		//- 				input(type='radio', id="color9", name='device-color', value="color9")
+		//- 				label(for="color9")
+		//- 			li.device-color-picker
+		//- 				input(type='radio', id="color10", name='device-color', value="color10")
+		//- 				label(for="color10")
+		//- 			li.device-color-picker
+		//- 				input(type='radio', id="color11", name='device-color', value="color11")
+		//- 				label(for="color11")
+		//- 			li.device-color-picker
+		//- 				input(type='radio', id="color12", name='device-color', value="color12")
+		//- 				label(for="color12")
+		li.accordion-section.color2
+			input(class="accordion-item-input" type="radio" name="accordion" id="item4")
+			label(for="item4" class="accordion-section-header") Цвет
+			//- h3.accordion-section-header Цвет
+			.accordion-section-content
+				form.device-color-list2
+					input(type='checkbox', id="color1", name='device-color', value="color1")
+					label(class="colorp" for="color1")
+					input(type='checkbox', id="color2", name='device-color', value="color2")
+					label(class="colorp" for="color2")
+					input(type='checkbox', id="color3", name='device-color', value="color3")
+					label(class="colorp" for="color3")
+					input(type='checkbox', id="color4", name='device-color', value="color4")
+					label(class="colorp" for="color4")
+					input(type='checkbox', id="color5", name='device-color', value="color5")
+					label(class="colorp" for="color5")
+					input(type='checkbox', id="color6", name='device-color', value="color6")
+					label(class="colorp" for="color6")
+					input(type='checkbox', id="color7", name='device-color', value="color7")
+					label(class="colorp" for="color7")
+					input(type='checkbox', id="color8", name='device-color', value="color8")
+					label(class="colorp" for="color8")
+					input(type='checkbox', id="color9", name='device-color', value="color9")
+					label(class="colorp" for="color9")
+					input(type='checkbox', id="color10", name='device-color', value="color10")
+					label(class="colorp" for="color10")
+					input(type='checkbox', id="color11", name='device-color', value="color11")
+					label(class="colorp" for="color11")
+					input(type='checkbox', id="color12", name='device-color', value="color12")
+					label(class="colorp" for="color12")
+		li.accordion-section.os
+			input(class="accordion-item-input" type="radio" name="accordion" id="item5")
+			label(for="item5" class="accordion-section-header") Операционные системы
+			//- h3.accordion-section-header Операционные системы
+			form.accordion-section-content
+				input(type='checkbox', id="android", name='deviceos', value="android", checked)
+				label(for="android", class="checkbox_label") Android
+				input(type='checkbox', id="ios", name='deviceos', value="ios")
+				label(for="ios", class="checkbox_label") iOS
+				input(type='checkbox', id="winmob", name='deviceos', value="winmob", checked)
+				label(for="winmob", class="checkbox_label") Windows Mobile
+				input(type='checkbox', id="symbian", name='deviceos', value="symbian")
+				label(for="symbian", class="checkbox_label") Symbian
+				input(type='checkbox', id="customos", name='deviceos', value="customos", checked)
+				label(for="customos", class="checkbox_label") Custom
+				.reset_checkboxes Сбросить фильтр
+	//- .accordeon
+	//- 	ul.accordeon__list
+	//- 		- for (var i = 0; i < 10; i++)
+	//- 			li.accordeon__item
+	//- 				.accordeon__trigger
+	//- 				.accordeon__content Пункт номер #{i}

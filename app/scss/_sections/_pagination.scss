@@ -1,0 +1,90 @@
+.pagination-container {
+	text-align: right;
+
+	.pagination {
+		// display: inline-block;
+		text-align: right;
+		// min-width: 146px;
+		// min-height: 25px;
+		// background-color: lightgreen;
+		font-size: 0;
+		margin: 0;
+		padding: 0;
+
+		.pagination-item {
+			display: inline-block;
+			vertical-align: top;
+			text-align: center;
+			line-height: 25px;
+			width: 26px;
+			height: 25px;
+			background-color: #fbfbfb;
+			border: 1px solid #dee1e4;
+			border-radius: 3px;
+
+			margin: 0 4px 0 0;
+			position: relative;
+			&:last-child {
+				margin-right: 0;
+			}
+
+			&_active {
+				background-color: #e0e0e0;
+				border-color: #bdbebd;
+				box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
+			}
+
+
+
+
+			.pagination-link {
+				display: block;
+				width: 100%;
+				height: 100%;
+				text-align: center;
+				text-decoration: none;
+				line-height: 25px;
+				vertical-align: middle;
+				color: #7f7f7f;
+				font-size: 12px;
+				font-weight: 700;
+				position: relative;
+
+				&_previous {
+					text-indent: -9999px;
+					&:before {
+						content: "";
+						width: 6px;
+						height: 9px;
+						@include sprite($pagination-arrow-previous);
+						position: absolute;
+						top: 0;
+						right: 0;
+						bottom: 0;
+						left: 0;
+						margin: auto;
+					}
+				}
+
+				&_next {
+					text-indent: -9999px;
+					&:before {
+						content: "";
+						width: 6px;
+						height: 9px;
+						@include sprite($pagination-arrow-next);
+						position: absolute;
+						top: 0;
+						right: 0;
+						bottom: 0;
+						left: 0;
+						margin: auto;
+					}
+				}
+
+			}
+
+		}
+	}
+
+}

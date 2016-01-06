@@ -1,0 +1,26 @@
+include _common/_mixins
+
+doctype html
+html(lang='ru')
+	include _common/head
+	body
+		.wrapper
+			include _common/header
+			include _common/logo_search_mainnav
+			include _common/catalogue_nav
+			include _common/breadcrumbs
+			.main
+				.main-container.clearfix
+					block content
+					//- include _common/sidebar
+					//- .content
+					//- 	include _common/filter-panel
+					//- 	include _common/content1
+					//- 	include _common/pagination
+				include _common/discl
+					//- .content__wrapper
+					//- 	.content__inner
+					//- 		.article
+					//- 			.article-content
+					//- 				block content
+			include _common/footer

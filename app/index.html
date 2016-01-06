@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="viewport" content="width=device-width">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,300&amp;subset=latin,cyrillic" type="text/css">
+		<link rel="stylesheet" href="/css/main.css">
+		<!-- bower:css-->
+		<link rel="stylesheet" href="/bower/normalize-css/normalize.css">
+		<link rel="stylesheet" href="/bower/jquery-form-styler/jquery.formstyler.css">
+		<!-- endbower -->
+		<title>Каталог</title>
+	</head>
+	<body>
+		<div class="wrapper">
+			<div class="header">
+				<div class="container clearfix">
+					<div class="container-left">
+						<ul class="social-list">
+							<li class="item"><a href="" class="social-list-link social-list-link_facebook">facebook</a></li>
+							<li class="item"><a href="" class="social-list-link social-list-link_vk">vk</a></li>
+							<li class="item"><a href="" class="social-list-link social-list-link_twitter">twitter</a></li>
+						</ul>
+					</div>
+					<div class="container-right">
+						<ul class="contacts-list">
+							<li class="address"><a href="" class="address-link">ул. Маяковская 6, офис 17</a></li>
+							<li class="phone"><a href="tel:+79211231213" class="phone-link">+7 (921) 123-12-13</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="header2">
+				<div class="container2 clearfix">
+					<div class="container2-left"><a href="" class="logo">Cooltech<img style="width: 238px; height: 36px" alt="Cooltech" src="img/header-logo.png" class="logo-image"></a>
+						<form action="/" method="post" class="search search">
+							<input name="search-text" placeholder="Что будем искать?" type="text" class="search__text">
+							<button class="search__submit">Найти</button>
+						</form>
+					</div>
+					<div class="container2-right">
+						<ul class="navigation">
+							<li class="navigation-item map"><a href="#" class="navigation-link map-link">Карта проезда</a></li>
+							<li class="navigation-item order_history"><a href="#" class="navigation-link order_hystory-link">История заказов</a></li>
+							<li class="navigation-item my_cart"><a href="#" class="navigation-link my_cart-link">Корзина</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="catalogue-nav">
+				<div class="container3">
+					<ul class="catalogue-navbar">
+						<li class="catalogue-category"><a href="#" class="catalogue-category-link tablet">Планшеты</a></li>
+						<li class="catalogue-category"><a href="#" class="catalogue-category-link catalogue-category-link_active mobile_phone">Мобильные телефоны</a></li>
+						<li class="catalogue-category"><a href="#" class="catalogue-category-link mp3player">Mp3-плееры</a></li>
+						<li class="catalogue-category"><a href="#" class="catalogue-category-link desktop">Персональные компьютеры</a></li>
+						<li class="catalogue-category"><a href="#" class="catalogue-category-link laptop">Ноутбуки</a></li>
+						<li class="catalogue-category"><a href="#" class="catalogue-category-link peripherals">Аксессуары</a></li>
+						<li class="catalogue-category"><a href="#" class="catalogue-category-link hhappliance">Бытовая техника</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="bc-wrappper">
+				<div class="bc-container">
+					<ul class="bc-list">
+						<li class="bc-item"><a href="" class="bc-link">Главная</a></li>
+						<li class="bc-item"><a href="" class="bc-link">Каталог</a></li>
+					</ul>
+					<h1 class="page-main-header">Мобильные телефоны</h1>
+				</div>
+			</div>
+			<div class="main">
+				<div class="main-container clearfix">
+					<div class="sidebar">
+						<ul class="pricerange-toggle">
+							<li class="pricerange-item"><a href="" class="pricerange-link">Флагманы</a></li>
+							<li class="pricerange-item"><a href="" class="pricerange-link pricerange-link_active">Бюджетная линейка</a></li>
+						</ul>
+						<ul class="accordion vertical">
+							<li class="accordion-section availability">
+								<input type="radio" name="accordion" id="item1" checked class="accordion-item-input">
+								<label for="item1" class="accordion-section-header">Наличие в магазинах</label>
+								<div class="accordion-section-content">
+									<input type="radio" id="allstores" name="stores" value="allstores" checked>
+									<label for="allstores" class="radio_label">Во всех магазинах</label>
+									<input type="radio" id="closeststores" name="stores" value="closeststores">
+									<label for="closeststores" class="radio_label">В ближайшем ко мне магазине</label>
+								</div>
+							</li>
+							<li class="accordion-section brand">
+								<input type="radio" name="accordion" id="item2" class="accordion-item-input">
+								<label for="item2" class="accordion-section-header">Бренды</label>
+								<div class="accordion-section-content">
+									<input type="checkbox" id="Lenovo" name="brand" value="Lenovo" checked>
+									<label for="Lenovo" class="checkbox_label">Lenovo</label>
+									<input type="checkbox" id="Apple" name="brand" value="Apple">
+									<label for="Apple" class="checkbox_label">Apple</label>
+									<input type="checkbox" id="Samsung" name="brand" value="Samsung" checked>
+									<label for="Samsung" class="checkbox_label">Samsung</label>
+									<input type="checkbox" id="Asus" name="brand" value="Asus">
+									<label for="Asus" class="checkbox_label">Asus</label>
+									<input type="checkbox" id="Motorola" name="brand" value="Motorola" checked>
+									<label for="Motorola" class="checkbox_label">Motorola</label>
+									<div class="reset_checkboxes">Сбросить фильтр</div>
+								</div>
+							</li>
+							<li class="accordion-section price">
+								<input type="radio" name="accordion" id="item3" class="accordion-item-input">
+								<label for="item3" class="accordion-section-header">Цена</label>
+								<div class="accordion-section-content">
+									<div class="pricerange-container clearfix">
+										<div class="pricerange-from">от
+											<input type="text" id="minprice">
+										</div>
+										<div class="pricerange-to">до
+											<input type="text" id="maxprice">
+										</div>
+									</div>
+									<div id="slider-range"></div>
+								</div>
+							</li>
+							<li class="accordion-section color2">
+								<input type="radio" name="accordion" id="item4" class="accordion-item-input">
+								<label for="item4" class="accordion-section-header">Цвет</label>
+								<div class="accordion-section-content">
+									<form class="device-color-list2">
+										<input type="checkbox" id="color1" name="device-color" value="color1">
+										<label for="color1" class="colorp"></label>
+										<input type="checkbox" id="color2" name="device-color" value="color2">
+										<label for="color2" class="colorp"></label>
+										<input type="checkbox" id="color3" name="device-color" value="color3">
+										<label for="color3" class="colorp"></label>
+										<input type="checkbox" id="color4" name="device-color" value="color4">
+										<label for="color4" class="colorp"></label>
+										<input type="checkbox" id="color5" name="device-color" value="color5">
+										<label for="color5" class="colorp"></label>
+										<input type="checkbox" id="color6" name="device-color" value="color6">
+										<label for="color6" class="colorp"></label>
+										<input type="checkbox" id="color7" name="device-color" value="color7">
+										<label for="color7" class="colorp"></label>
+										<input type="checkbox" id="color8" name="device-color" value="color8">
+										<label for="color8" class="colorp"></label>
+										<input type="checkbox" id="color9" name="device-color" value="color9">
+										<label for="color9" class="colorp"></label>
+										<input type="checkbox" id="color10" name="device-color" value="color10">
+										<label for="color10" class="colorp"></label>
+										<input type="checkbox" id="color11" name="device-color" value="color11">
+										<label for="color11" class="colorp"></label>
+										<input type="checkbox" id="color12" name="device-color" value="color12">
+										<label for="color12" class="colorp"></label>
+									</form>
+								</div>
+							</li>
+							<li class="accordion-section os">
+								<input type="radio" name="accordion" id="item5" class="accordion-item-input">
+								<label for="item5" class="accordion-section-header">Операционные системы</label>
+								<form class="accordion-section-content">
+									<input type="checkbox" id="android" name="deviceos" value="android" checked>
+									<label for="android" class="checkbox_label">Android</label>
+									<input type="checkbox" id="ios" name="deviceos" value="ios">
+									<label for="ios" class="checkbox_label">iOS</label>
+									<input type="checkbox" id="winmob" name="deviceos" value="winmob" checked>
+									<label for="winmob" class="checkbox_label">Windows Mobile</label>
+									<input type="checkbox" id="symbian" name="deviceos" value="symbian">
+									<label for="symbian" class="checkbox_label">Symbian</label>
+									<input type="checkbox" id="customos" name="deviceos" value="customos" checked>
+									<label for="customos" class="checkbox_label">Custom</label>
+									<div class="reset_checkboxes">Сбросить фильтр</div>
+								</form>
+							</li>
+						</ul>
+					</div>
+					<div class="content">
+						<div class="filter clearfix">
+							<form class="sort-method-select">
+								<label for="sort-method-dropdown" class="sort-method-label">Сортировать по</label>
+								<select name="sort-method" id="sort-method-dropdown">
+									<option value="price" selected>по цене</option>
+									<option value="popularity">по популярности</option>
+								</select>
+							</form>
+							<form class="view-switch">
+								<h3 class="view-switch-header">Вид каталога</h3>
+								<input data-view="detailed_list" type="radio" id="detailed-list" name="catalogue-view" value="detailed-list" checked class="view-switch-radio">
+								<label for="detailed-list" data-view="detailed_list" class="list-selector list-selector-detailed"></label>
+								<input data-view="tile" type="radio" id="tile" name="catalogue-view" value="tile" class="view-switch-radio">
+								<label for="tile" data-view="tile" class="list-selector list-selector-tile"></label>
+								<input data-view="simple_list" type="radio" id="simple-list" name="catalogue-view" value="simple-list" class="view-switch-radio">
+								<label for="simple-list" data-view="simple_list" class="list-selector list-selector-simple"></label>
+							</form>
+						</div>
+						<div class="list-wrapper detailed_list">
+							<div class="view0">
+								<div class="image-container">
+									<div class="image_gallery">
+										<div class="product-slider__main-wrapper"><img src="img/products/samsungS3-left.jpg" alt="Samsung GT-I9301I GALAXY S 3" class="product-slider__main-image"></div>
+										<ul class="product-slider__min-image-list">
+											<li class="product-slider__min-image-item product-slider__min-image-item_active"><img src="img/products/samsungS3-left.jpg" alt="Samsung GT-I9301I GALAXY S 3" class="product-slider__min-image product-slider__min-image_left"></li>
+											<li class="product-slider__min-image-item"><img src="img/products/samsungS3-center.jpg" alt="Samsung GT-I9301I GALAXY S 3" class="product-slider__min-image product-slider__min-image_center"></li>
+											<li class="product-slider__min-image-item"><img src="img/products/samsungS3-right.jpg" alt="Samsung GT-I9301I GALAXY S 3" class="product-slider__min-image product-slider__min-image_right"></li>
+										</ul>
+									</div>
+									<div class="vendor_code">Артикул <span class="item-vendor_code">7985242</span></div>
+								</div>
+								<div class="item_info-container">
+									<div class="title">Samsung Galaxy SIII</div>
+									<div class="description">Длинный-предлинный текст с описанием текст с описанием текст с описанием текст с описанием текст с описанием текст с описанием текст с описанием</div>
+									<table class="spec_table">
+										<tr class="table_SIM-type clearfix">
+											<td class="table_prop">Тип SIM-карты</td>
+											<td class="table_value">Micro-SIM</td>
+										</tr>
+										<tr class="table_SIM-number clearfix">
+											<td class="table_prop">Количество SIM-карт</td>
+											<td class="table_value">1</td>
+										</tr>
+										<tr class="table_color clearfix">
+											<td class="table_prop">Цвет</td>
+											<td class="table_value">Черный</td>
+										</tr>
+										<tr class="table_OS clearfix">
+											<td class="table_prop">ОС</td>
+											<td class="table_value">Windows Phone</td>
+										</tr>
+										<tr class="table_standard clearfix">
+											<td class="table_prop">Связь 3G</td>
+											<td class="table_value">Есть</td>
+										</tr>
+										<tr class="table_4g clearfix">
+											<td class="table_prop">4G (LTE)</td>
+											<td class="table_value">Нет</td>
+										</tr>
+										<tr class="table_gps clearfix">
+											<td class="table_prop">GPS-модуль</td>
+											<td class="table_value">A-GPS</td>
+										</tr>
+									</table>
+									<div class="rating">
+										<ul class="rating-scale">
+											<li class="rating-star rating-star_active"></li>
+											<li class="rating-star rating-star_active"></li>
+											<li class="rating-star rating-star_active"></li>
+											<li class="rating-star rating-star_active"></li>
+											<li class="rating-star"></li>
+										</ul>
+										<div class="rating-count">4</div>
+									</div>
+								</div>
+								<div class="price">8 540 <span class="rouble">г</span></div>
+								<div class="buy_it-container"><a href="" class="buy_it">В корзину</a>
+									<div class="in_store">В наличии</div>
+								</div>
+							</div>
+							<div class="view0">
+								<div class="image-container">
+									<div class="image_gallery">
+										<div class="product-slider__main-wrapper"><img src="img/products/samsungS3-left.jpg" alt="Samsung GT-I9301I GALAXY S 3" class="product-slider__main-image"></div>
+										<ul class="product-slider__min-image-list">
+											<li class="product-slider__min-image-item product-slider__min-image-item_active"><img src="img/products/samsungS3-left.jpg" alt="Samsung GT-I9301I GALAXY S 3" class="product-slider__min-image product-slider__min-image_left"></li>
+											<li class="product-slider__min-image-item"><img src="img/products/samsungS3-center.jpg" alt="Samsung GT-I9301I GALAXY S 3" class="product-slider__min-image product-slider__min-image_center"></li>
+											<li class="product-slider__min-image-item"><img src="img/products/samsungS3-right.jpg" alt="Samsung GT-I9301I GALAXY S 3" class="product-slider__min-image product-slider__min-image_right"></li>
+										</ul>
+									</div>
+									<div class="vendor_code">Артикул <span class="item-vendor_code">7985242</span></div>
+								</div>
+								<div class="item_info-container">
+									<div class="title">Samsung Galaxy SIII</div>
+									<div class="description">Длинный-предлинный текст с описанием текст с описанием текст с описанием текст с описанием текст с описанием текст с описанием с описанием текст с описанием</div>
+									<table class="spec_table">
+										<tr class="table_SIM-type clearfix">
+											<td class="table_prop">Тип SIM-карты</td>
+											<td class="table_value">Micro-SIM</td>
+										</tr>
+										<tr class="table_SIM-number clearfix">
+											<td class="table_prop">Количество SIM-карт</td>
+											<td class="table_value">1</td>
+										</tr>
+										<tr class="table_color clearfix">
+											<td class="table_prop">Цвет</td>
+											<td class="table_value">Черный</td>
+										</tr>
+										<tr class="table_OS clearfix">
+											<td class="table_prop">ОС</td>
+											<td class="table_value">Windows Phone</td>
+										</tr>
+										<tr class="table_standard clearfix">
+											<td class="table_prop">Связь 3G</td>
+											<td class="table_value">Есть</td>
+										</tr>
+										<tr class="table_4g clearfix">
+											<td class="table_prop">4G (LTE)</td>
+											<td class="table_value">Нет</td>
+										</tr>
+										<tr class="table_gps clearfix">
+											<td class="table_prop">GPS-модуль</td>
+											<td class="table_value">A-GPS</td>
+										</tr>
+									</table>
+									<div class="rating">
+										<ul class="rating-scale">
+											<li class="rating-star rating-star_active"></li>
+											<li class="rating-star rating-star_active"></li>
+											<li class="rating-star rating-star_active"></li>
+											<li class="rating-star rating-star_active"></li>
+											<li class="rating-star"></li>
+										</ul>
+										<div class="rating-count">4</div>
+									</div>
+								</div>
+								<div class="price">8 540 <span class="rouble">г</span></div>
+								<div class="buy_it-container"><a href="" class="buy_it">В корзину</a>
+									<div class="in_store">В наличии</div>
+								</div>
+							</div>
+							<div class="view0">
+								<div class="image-container">
+									<div class="image_gallery">
+										<div class="product-slider__main-wrapper"><img src="img/products/samsungS3-left.jpg" alt="Samsung GT-I9301I GALAXY S 3" class="product-slider__main-image"></div>
+										<ul class="product-slider__min-image-list">
+											<li class="product-slider__min-image-item product-slider__min-image-item_active"><img src="img/products/samsungS3-left.jpg" alt="Samsung GT-I9301I GALAXY S 3" class="product-slider__min-image product-slider__min-image_left"></li>
+											<li class="product-slider__min-image-item"><img src="img/products/samsungS3-center.jpg" alt="Samsung GT-I9301I GALAXY S 3" class="product-slider__min-image product-slider__min-image_center"></li>
+											<li class="product-slider__min-image-item"><img src="img/products/samsungS3-right.jpg" alt="Samsung GT-I9301I GALAXY S 3" class="product-slider__min-image product-slider__min-image_right"></li>
+										</ul>
+									</div>
+									<div class="vendor_code">Артикул <span class="item-vendor_code">7985242</span></div>
+								</div>
+								<div class="item_info-container">
+									<div class="title">Samsung Galaxy SIII</div>
+									<div class="description">Длинный-предлинный текст с описаниtdем текст с описанием текст с описанием текст с описанием текст с описанием текст с описанием текст с описанием</div>
+									<table class="spec_table">
+										<tr class="table_SIM-type clearfix">
+											<td class="table_prop">Тип SIM-карты</td>
+											<td class="table_value">Micro-SIM</td>
+										</tr>
+										<tr class="table_SIM-number clearfix">
+											<td class="table_prop">Количество SIM-карт</td>
+											<td class="table_value">1</td>
+										</tr>
+										<tr class="table_color clearfix">
+											<td class="table_prop">Цвет</td>
+											<td class="table_value">Черный</td>
+										</tr>
+										<tr class="table_OS clearfix">
+											<td class="table_prop">ОС</td>
+											<td class="table_value">Windows Phone</td>
+										</tr>
+										<tr class="table_standard clearfix">
+											<td class="table_prop">Связь 3G</td>
+											<td class="table_value">Есть</td>
+										</tr>
+										<tr class="table_4g clearfix">
+											<td class="table_prop">4G (LTE)</td>
+											<td class="table_value">Нет</td>
+										</tr>
+										<tr class="table_gps clearfix">
+											<td class="table_prop">GPS-модуль</td>
+											<td class="table_value">A-GPS</td>
+										</tr>
+									</table>
+									<div class="rating">
+										<ul class="rating-scale">
+											<li class="rating-star rating-star_active"></li>
+											<li class="rating-star rating-star_active"></li>
+											<li class="rating-star rating-star_active"></li>
+											<li class="rating-star rating-star_active"></li>
+											<li class="rating-star"></li>
+										</ul>
+										<div class="rating-count">4</div>
+									</div>
+								</div>
+								<div class="price">8 540 <span class="rouble">г</span></div>
+								<div class="buy_it-container"><a href="" class="buy_it">В корзину</a>
+									<div class="in_store">В наличии</div>
+								</div>
+							</div>
+							<div class="view0">
+								<div class="image-container">
+									<div class="image_gallery">
+										<div class="product-slider__main-wrapper"><img src="img/products/samsungS3-left.jpg" alt="Samsung GT-I9301I GALAXY S 3" class="product-slider__main-image"></div>
+										<ul class="product-slider__min-image-list">
+											<li class="product-slider__min-image-item product-slider__min-image-item_active"><img src="img/products/samsungS3-left.jpg" alt="Samsung GT-I9301I GALAXY S 3" class="product-slider__min-image product-slider__min-image_left"></li>
+											<li class="product-slider__min-image-item"><img src="img/products/samsungS3-center.jpg" alt="Samsung GT-I9301I GALAXY S 3" class="product-slider__min-image product-slider__min-image_center"></li>
+											<li class="product-slider__min-image-item"><img src="img/products/samsungS3-right.jpg" alt="Samsung GT-I9301I GALAXY S 3" class="product-slider__min-image product-slider__min-image_right"></li>
+										</ul>
+									</div>
+									<div class="vendor_code">Артикул <span class="item-vendor_code">7985242</span></div>
+								</div>
+								<div class="item_info-container">
+									<div class="title">Samsung Galaxy SIII</div>
+									<div class="description">Длинный-предлинный текст с описанием текст с описанием текст с описанием текст с описанием текст с описанием текст с описанием текст с описанием</div>
+									<table class="spec_table">
+										<tr class="table_SIM-type clearfix">
+											<td class="table_prop">Тип SIM-карты</td>
+											<td class="table_value">Micro-SIM</td>
+										</tr>
+										<tr class="table_SIM-number clearfix">
+											<td class="table_prop">Количество SIM-карт</td>
+											<td class="table_value">1</td>
+										</tr>
+										<tr class="table_color clearfix">
+											<td class="table_prop">Цвет</td>
+											<td class="table_value">Черный</td>
+										</tr>
+										<tr class="table_OS clearfix">
+											<td class="table_prop">ОС</td>
+											<td class="table_value">Windows Phone</td>
+										</tr>
+										<tr class="table_standard clearfix">
+											<td class="table_prop">Связь 3G</td>
+											<td class="table_value">Есть</td>
+										</tr>
+										<tr class="table_4g clearfix">
+											<td class="table_prop">4G (LTE)</td>
+											<td class="table_value">Нет</td>
+										</tr>
+										<tr class="table_gps clearfix">
+											<td class="table_prop">GPS-модуль</td>
+											<td class="table_value">A-GPS</td>
+										</tr>
+									</table>
+									<div class="rating">
+										<ul class="rating-scale">
+											<li class="rating-star rating-star_active"></li>
+											<li class="rating-star rating-star_active"></li>
+											<li class="rating-star rating-star_active"></li>
+											<li class="rating-star rating-star_active"></li>
+											<li class="rating-star"></li>
+										</ul>
+										<div class="rating-count">4</div>
+									</div>
+								</div>
+								<div class="price">8 540 <span class="rouble">г</span></div>
+								<div class="buy_it-container"><a href="" class="buy_it">В корзину</a>
+									<div class="in_store">В наличии</div>
+								</div>
+							</div>
+						</div>
+						<div class="pagination-container">
+							<ul class="pagination">
+								<li class="pagination-item"><a href="" class="pagination-link pagination-link_previous">Предыдущая</a></li>
+								<li class="pagination-item pagination-item_active"><a href="" class="pagination-link">1</a></li>
+								<li class="pagination-item"><a href="" class="pagination-link">2</a></li>
+								<li class="pagination-item"><a href="" class="pagination-link">3</a></li>
+								<li class="pagination-item"><a href="" class="pagination-link pagination-link_next">Следующая</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="disclaimer-container">
+					<div class="disclaimer-header">Важная информация</div>
+					<div class="disclaimer-text">
+						<p>Повседневная практика показывает, что сложившаяся структура организации влечет за собой роцесс внедрения и модернизации позиций, занимаемых участниками в отношении поставленных задач. Значимость этих проблем настолько очевидна, что реализация намеченных плановых заданий в значительной степени обуславливает создание модели развития. Таким образом консультация с широким активом представляет собой интересный эксперимент проверки модели развития.</p>
+						<p>Идейные соображения высшего порядка, а также рамки и место обучения кадров позволяет оценить значение позиций, занимаемых участниками в отношении поставленных задач. Таким образом сложившаяся структура организации требуют определения и уточнения направлений прогрессивного развития. Равным образом консультация с широким активом влечет за собой процесс внедрения и модернизации соответствующий условий активизации.</p>
+						<p>Идейные соображения высшего порядка, а также начало повседневной работы по формированию позиции позволяет оценить значение соответствующий условий активизации. С другой стороны сложившаяся структура организации позволяет оценить значение системы обучения кадров, соответствует насущным потребностям.</p>
+						<p>Повседневная практика показывает, что сложившаяся структура организации влечет за собой процесс внедрения и модернизации позиций, занимаемых участниками в отношении поставленных задач. Значимость этих проблем настолько очевидна, что реализация намеченных плановых заданий в значительной степени обуславливает создание модели развития. Таким образом консультация с широким активом представляет собой интересный эксперимент проверки модели развития.</p>
+						<p>Идейные соображения высшего порядка, а также рамки и место обучения кадров позволяет оценить значение позиций, занимаемых участниками в отношении поставленных задач. Таким образом сложившаяся структура организации требуют определения и уточнения направлений прогрессивного развития. Равным образом консультация с широким активом влечет за собой процесс внедрения и модернизации соответствующий условий активизации.</p>
+						<p>Идейные соображения высшего порядка, а также начало повседневной работы по формированию позиции позволяет оценить значение соответствующий условий активизации. С другой стороны сложившаяся структура организации позволяет оценить значение системы обучения кадров, соответствует насущным потребностям.
+						</p>
+					</div>
+				</div>
+			</div>
+			<footer class="footer">
+				<div class="container clearfix"><a href="" class="footer-logo"><img style="width: 238px; height: 36px" alt="Cooltech" src="img/footer-logo.png" class="footer-logo-image"></a>
+					<div class="footer-right-container">
+						<div class="social-list-container">
+							<ul class="social-list">
+								<li class="social-item"><a href="" class="social-link social-link_fb">Facebook</a></li>
+								<li class="social-item"><a href="" class="social-link social-link_vk">VK</a></li>
+								<li class="social-item"><a href="" class="social-link social-link_tw">Twitter</a></li>
+							</ul>
+						</div>
+						<ul class="footer-links">
+							<li class="footer-link-item"><a href="" class="footer-link">Планшеты</a></li>
+							<li class="footer-link-item"><a href="" class="footer-link">Мобильные телефоны</a></li>
+							<li class="footer-link-item"><a href="" class="footer-link">MP3 плееры</a></li><br>
+							<li class="footer-link-item"><a href="" class="footer-link">Персональные компьютеры</a></li>
+							<li class="footer-link-item"><a href="" class="footer-link">Ноутбуки</a></li>
+							<li class="footer-link-item"><a href="" class="footer-link">Аксессуары</a></li>
+							<li class="footer-link-item"><a href="" class="footer-link">Бытовая техника</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="copyright">All rights reserved. 2015. no copy alowed</div>
+			</footer>
+			<!-- bower:js-->
+			<script src="/bower/jquery/dist/jquery.js"></script>
+			<script src="/bower/jquery-ui/jquery-ui.js"></script>
+			<script src="/bower/jquery.columnizer/src/jquery.columnizer.js"></script>
+			<script src="/bower/jquery-form-styler/jquery.formstyler.min.js"></script>
+			<!-- endbower-->
+			<script src="/js/main.js"></script>
+		</div>
+	</body>
+</html>

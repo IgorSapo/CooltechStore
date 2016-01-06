@@ -1,0 +1,137 @@
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.footer {
+	width: 100%;
+	min-height: 221px;
+	background: url("../img/footer-background.jpg") repeat scroll center top / cover;
+
+	.container {
+		width: 1100px;
+		min-height: 190px;
+		margin: 0 auto;
+		padding-top: 35px;
+
+		.footer-logo {
+			float: left;
+			display: inline-block;
+			width: 238px;
+			height: 36px;
+			margin-top: 37px;
+		}
+
+		.footer-right-container {
+			float: right;
+			.social-list-container {
+				text-align: right;
+				margin-bottom: 27px;
+				padding-right: 5px;
+				.social-list {
+					display: inline-block;
+					// width: 182px;
+					height: 43px;
+					margin: 0;
+					padding: 0;
+
+					.social-item {
+						display: inline-block;
+						width: 43px;
+						height: 43px;
+						border-radius: 50%;
+						background-color: white;
+						margin-right: 22px;
+						&:last-child {
+							margin-right: 0;
+						}
+
+						.social-link {
+							display: block;
+							width: 100%;
+							height: 100%;
+							border-radius: 50%;
+							line-height: 43px;
+							text-align: center;
+							vertical-align: middle;
+							text-indent: -9999px;
+							position: relative;
+
+							&:before {
+								content:"";
+								position: absolute;
+								top: 0;
+								bottom: 0;
+								left: 0;
+								right: 0;
+								margin: auto;
+							}
+
+							&_fb:before {
+								width: 11px;
+								height: 21px;
+								@include sprite($footer-facebook-default);
+							}
+
+							&_fb:hover:before {
+								@include sprite($footer-facebook-hover);
+							}
+
+							&_vk:before {
+								width: 16px;
+								height: 21px;
+								@include sprite($footer-vk-default);
+							}
+
+							&_vk:hover:before {
+								@include sprite($footer-vk-hover);
+							}
+
+							&_tw:before {
+								width: 25px;
+								height: 21px;
+								@include sprite($footer-twitter-default);
+							}
+
+							&_tw:hover:before {
+								@include sprite($footer-twitter-hover);
+							}
+
+						}
+
+					}
+				}
+			}
+			.footer-links {
+				text-align: right;
+				margin: 16px 0 14px 0; 
+
+				.footer-link-item {
+					display: inline-block;
+					margin-left: 24px;
+					margin-bottom: 13px;
+
+					.footer-link {
+						font-size: 14px;
+						font-weight: 400;
+						color: white;
+					}
+				}
+			}
+		}
+	}
+
+	.copyright {
+		width: 100%;
+		height: 29px;
+		line-height: 29px;
+		vertical-align: middle;
+		text-align: center;
+		font-size: 12px;
+		font-weight: 400;
+		color: white;
+		border-top: 1px solid #4a4a4a;
+	}
+}
+
